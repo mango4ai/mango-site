@@ -48,6 +48,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '学AI', link: '/ai/', activeMatch: '/ai/' },
       { text: '读书笔记', link: '/reading/', activeMatch: '/reading/' },
+      { text: '书签', link: '/bookmark/', activeMatch: '/bookmark/' },
       { text: '猫大刚笔记', link: '/wiki/', activeMatch: '/wiki/' }
     ],
 
