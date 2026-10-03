@@ -2,22 +2,24 @@
 layout: home
 
 hero:
-  name: 我的文档站
-  text: 用 VitePress 搭建的静态站点
-  tagline: 写 Markdown，构建出纯静态 HTML，可直接部署到任意静态托管平台
+  name: Mango 的个人门户
+  text: 学 AI · 读书笔记 · 个人知识沉淀
+  tagline: 写 Markdown 就能发，一个板块一个目录，越写越顺手
   actions:
     - theme: brand
-      text: 快速上手
-      link: /guide/getting-started
+      text: 学AI
+      link: /ai/
     - theme: alt
-      text: 项目介绍
-      link: /guide/
+      text: 读书笔记
+      link: /reading/
 
 features:
-  - title: 纯静态产物
-    details: 构建结果是一份纯 HTML/CSS/JS 文件，没有服务端依赖，丢到任何静态托管上就能访问。
-  - title: 开箱即用
-    details: 默认主题包含侧边栏、目录、深色模式与本地全文搜索，无需额外配置。
-  - title: Markdown 优先
-    details: 直接在 Markdown 里写内容，需要交互时再插入 Vue 组件，渐进增强。
+  - title: 学AI
+    details: 概念、提示词、工程实践与论文速递，用标签分类，边学边留档。
+    link: /ai/
+  - title: 读书笔记
+    details: 每本书一篇，结构统一：一句话结论、核心观点、摘抄、行动。
+    link: /reading/
+  - title: 持续扩展
+    details: 新板块就是新目录：加目录、加导航、加 frontmatter，列表与侧边栏自动生成。
 ---
