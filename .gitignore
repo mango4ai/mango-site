@@ -1,0 +1,10 @@
+node_modules
+docs/.vitepress/cache
+docs/.vitepress/dist
+
+# 本地 agent 运行时文件，不随站点入库
+.codebuddy/
+.multica/
+CODEBUDDY.md
+.DS_Store
+*.local
