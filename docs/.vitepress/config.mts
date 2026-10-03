@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
+import wikiSidebar from './wiki-sidebar.mts'
 
 const docsDir = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -47,6 +48,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '学AI', link: '/ai/', activeMatch: '/ai/' },
       { text: '读书笔记', link: '/reading/', activeMatch: '/reading/' },
+      { text: '猫大刚笔记', link: '/wiki/', activeMatch: '/wiki/' },
       { text: '站点说明', link: '/guide/', activeMatch: '/(guide|reference)/' }
     ],
 
@@ -63,6 +65,7 @@ export default defineConfig({
           items: [{ text: '板块首页', link: '/reading/' }, ...sectionItems('reading')]
         }
       ],
+      '/wiki/': wikiSidebar,
       '/guide/': [
         {
           text: '站点说明',

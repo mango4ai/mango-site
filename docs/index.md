@@ -20,6 +20,7 @@ features:
   - title: 读书笔记
     details: 每本书一篇，结构统一：一句话结论、核心观点、摘抄、行动。
     link: /reading/
-  - title: 持续扩展
-    details: 新板块就是新目录：加目录、加导航、加 frontmatter，列表与侧边栏自动生成。
+  - title: 猫大刚笔记
+    details: 从 mg.meiflower.top 迁来的技术笔记、硬件、书签与装修记录，原结构保留。
+    link: /wiki/
 ---
