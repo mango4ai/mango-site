@@ -6,5 +6,8 @@ docs/.vitepress/dist
 .codebuddy/
 .multica/
 CODEBUDDY.md
+
+# Netlify CLI 本地链接状态
+.netlify/
 .DS_Store
 *.local
