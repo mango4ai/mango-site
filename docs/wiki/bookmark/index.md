@@ -69,42 +69,40 @@ onUnmounted(() => observer && observer.disconnect())
       <span class="bm-search-count" v-if="keyword">命中 {{ shown }} 条</span>
     </div>
   </header>
-
-  <nav class="bm-chips">
-    <a
-      v-for="g in groups"
-      :key="g.name"
-      class="bm-chip"
-      :class="{ 'bm-chip-active': activeId === anchor(g.name) }"
-      :href="'#' + anchor(g.name)"
-    >
-      {{ g.name }}<i>{{ g.items.length }}</i>
-    </a>
-  </nav>
-
-  <section v-for="(g, gi) in filtered" :key="g.name" class="bm-group" :id="anchor(g.name)">
-    <h2 class="bm-group-title">
-      <span class="bm-index">{{ gi + 1 }}</span>
-      {{ g.name }}
-      <em>{{ g.items.length }}</em>
-    </h2>
-    <div class="bm-grid">
-      <a
-        v-for="it in g.items"
-        :key="it.u + it.t"
-        class="bm-card"
-        :href="it.u"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <span class="bm-avatar" :style="avatarStyle(it.t + it.u)">{{ it.t.slice(0, 1) }}</span>
-        <span class="bm-card-body">
-          <span class="bm-card-name">{{ it.t }}</span>
-          <span class="bm-card-host">{{ host(it.u) }}</span>
-        </span>
-      </a>
+  <div class="bm-layout">
+    <div class="bm-main">
+      <nav class="bm-chips">
+        <a v-for="g in groups" :key="g.name" class="bm-chip" :class="{ 'bm-chip-active': activeId === anchor(g.name) }" :href="'#' + anchor(g.name)">{{ g.name }}<i>{{ g.items.length }}</i></a>
+      </nav>
+      <section v-for="(g, gi) in filtered" :key="g.name" class="bm-group" :id="anchor(g.name)">
+        <h2 class="bm-group-title">
+          <span class="bm-index">{{ gi + 1 }}</span>
+          {{ g.name }}
+          <em>{{ g.items.length }}</em>
+        </h2>
+        <div class="bm-grid">
+          <a v-for="it in g.items" :key="it.u + it.t" class="bm-card" :href="it.u" target="_blank" rel="noreferrer">
+            <span class="bm-avatar" :style="avatarStyle(it.t + it.u)">{{ it.t.slice(0, 1) }}</span>
+            <span class="bm-card-body">
+              <span class="bm-card-name">{{ it.t }}</span>
+              <span class="bm-card-host">{{ host(it.u) }}</span>
+            </span>
+          </a>
+        </div>
+      </section>
+      <p v-if="!filtered.length" class="bm-empty">没有匹配的书签，换个词试试。</p>
     </div>
-  </section>
-
-  <p v-if="!filtered.length" class="bm-empty">没有匹配的书签，换个词试试。</p>
+    <aside class="bm-side">
+      <div class="bm-side-inner">
+        <div class="bm-side-head">分类目录<em>{{ groups.length }}</em></div>
+        <div class="bm-side-list">
+          <a v-for="(g, gi) in groups" :key="g.name" class="bm-side-item" :class="{ 'bm-side-item-active': activeId === anchor(g.name) }" :href="'#' + anchor(g.name)">
+            <span class="bm-side-no">{{ gi + 1 }}</span>
+            <span class="bm-side-name">{{ g.name }}</span>
+            <i>{{ g.items.length }}</i>
+          </a>
+        </div>
+      </div>
+    </aside>
+  </div>
 </div>
