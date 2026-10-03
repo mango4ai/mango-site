@@ -141,11 +141,30 @@
   opacity: 0.9;
 }
 
+/* 悬浮目录条：滚动时始终吸在导航栏下方 */
 .bm-chips {
+  position: sticky;
+  top: calc(var(--vp-nav-height, 64px) - 1px);
+  z-index: 20;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 0 0 32px;
+  margin: 0 -24px 32px;
+  padding: 12px 24px;
+  background: color-mix(in srgb, var(--vp-c-bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.bm-chip-active {
+  color: #fff;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  border-color: transparent;
+  box-shadow: 0 8px 18px -10px rgba(99, 102, 241, 0.9);
+}
+
+.bm-chip-active i {
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .bm-chip {
@@ -292,5 +311,13 @@
   }
   .bm-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .bm-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .bm-chips::-webkit-scrollbar {
+    display: none;
   }
 }
