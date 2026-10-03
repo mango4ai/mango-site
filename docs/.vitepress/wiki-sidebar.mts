@@ -12,7 +12,7 @@ const wikiSidebar: DefaultTheme.SidebarItem[] = [
   },
   {
     "text": "书签",
-    "link": "/wiki/bookmark"
+    "link": "/bookmark/"
   },
   {
     "text": "阅读",
