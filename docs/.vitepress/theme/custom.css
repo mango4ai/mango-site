@@ -145,7 +145,12 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) 236px;
   gap: 28px;
-  align-items: start;
+}
+
+/* 侧栏必须撑满整行高度，sticky 才有可移动的空间 */
+.bm-side {
+  align-self: stretch;
+  height: 100%;
 }
 
 /* 右侧悬浮分类目录 */
