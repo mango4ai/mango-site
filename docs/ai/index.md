@@ -28,6 +28,7 @@ title: 学AI
 4. [04 · Agent 与 Harness](/ai/04-agent-harness) —— 从"会说"到"会做"
 5. [05 · MCP 与 Skills](/ai/05-mcp-skills) —— 工具怎么接、经验怎么复用
 6. [06 · 发散：学习路线、误区与名词速查](/ai/06-more) —— 接下来往哪走
+7. [07 · Transformer 与注意力机制](/ai/07-transformer) —— 选读，想弄懂"为什么现在全是 Transformer"再往下钻
 
 ## 最新内容
 
