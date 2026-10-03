@@ -31,8 +31,8 @@ export default defineConfig({
   // 站点级配置：部署到子路径时改这里，例如 '/docs-site/'
   base: '/',
   lang: 'zh-CN',
-  title: 'Mango 的个人门户',
-  description: '学 AI、读书笔记与个人知识沉淀',
+  title: '猫大刚主页',
+  description: '写代码、读闲书、折腾硬件 —— 猫大刚的个人主页',
   cleanUrls: true,
   lastUpdated: true,
 
@@ -48,8 +48,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '学AI', link: '/ai/', activeMatch: '/ai/' },
       { text: '读书笔记', link: '/reading/', activeMatch: '/reading/' },
-      { text: '猫大刚笔记', link: '/wiki/', activeMatch: '/wiki/' },
-      { text: '站点说明', link: '/guide/', activeMatch: '/(guide|reference)/' }
+      { text: '猫大刚笔记', link: '/wiki/', activeMatch: '/wiki/' }
     ],
 
     sidebar: {
@@ -104,7 +103,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '基于 VitePress 构建',
+      message: '基于 VitePress 构建 · <a href="/guide/">站点说明</a>',
       copyright: 'Copyright © 2026'
     },
 

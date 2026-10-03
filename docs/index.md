@@ -2,16 +2,16 @@
 layout: home
 
 hero:
-  name: Mango 的个人门户
-  text: 学 AI · 读书笔记 · 个人知识沉淀
-  tagline: 写 Markdown 就能发，一个板块一个目录，越写越顺手
+  name: 猫大刚主页
+  text: 日拱一卒，功不唐捐
+  tagline: 写代码、读闲书、折腾硬件 —— 把学到的东西都留在这里
   actions:
     - theme: brand
-      text: 学AI
+      text: 开始逛逛
       link: /ai/
     - theme: alt
-      text: 读书笔记
-      link: /reading/
+      text: 猫大刚笔记
+      link: /wiki/
 
 features:
   - title: 学AI
@@ -24,3 +24,10 @@ features:
     details: 从 mg.meiflower.top 迁来的技术笔记、硬件、书签与装修记录，原结构保留。
     link: /wiki/
 ---
+
+<div class="slogans">
+  <p class="slogan-line">把复杂的事情做简单，把简单的事情做彻底。</p>
+  <p class="slogan-line">看过的书要留下自己的话，走过的坑要留下路标。</p>
+  <p class="slogan-line">不追热点，只把正在学的东西讲明白。</p>
+  <p class="slogan-line slogan-dim">慢一点没关系，别停下就行。</p>
+</div>
