@@ -12,6 +12,14 @@ hero:
     - theme: alt
       text: 猫大刚笔记
       link: /wiki/
+    - theme: alt
+      text: GitHub 仓库
+      link: https://github.com/mango4ai/mango-site
+      target: _blank
+    - theme: alt
+      text: Netlify 项目
+      link: https://mango-site.netlify.app
+      target: _blank
 
 features:
   - title: 书签
