@@ -27,4 +27,6 @@ docs/                    # 站点源码（VitePress srcDir）
 
 ## 部署
 
+线上地址：https://mango-site.netlify.app（Netlify 跟踪 main 分支，推送后自动构建部署）。
+
 子路径部署（如 GitHub Pages 的 `/<repo>/`）需把 `docs/.vitepress/config.mts` 里的 `base` 改成对应路径。详见 [部署说明](docs/reference/deploy.md)。
