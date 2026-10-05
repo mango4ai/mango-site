@@ -74,17 +74,36 @@
   padding-right: 24px;
 }
 
+/* 覆盖 VitePress 默认把 hero 图锁死在 320~392px 的容器/绝对定位，让 banner 真正放大 */
 .VPHero .image {
-  order: -1;
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
+  order: -1 !important;
+  width: 100% !important;
+  max-width: 1600px !important;
+  margin: 0 auto !important;
 }
 
+.VPHero .image-container {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+}
+
+.VPHero .image-bg {
+  display: none !important;
+}
+
+.VPHero .image-src,
 .VPHero .image img {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  width: 100% !important;
+  height: auto !important;
   display: block;
-  width: 100%;
-  height: auto;
   border-radius: 24px;
   box-shadow: 0 24px 60px -20px rgba(59, 130, 246, 0.8);
 }
