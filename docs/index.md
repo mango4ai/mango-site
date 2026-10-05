@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: 猫大刚主页
-  text: 日拱一卒，功不唐捐
-  tagline: 写代码、读闲书、折腾硬件 —— 把学到的东西都留在这里
+  image:
+    src: /hero-banner.svg
+    alt: 猫大刚主页 · 日拱一卒，功不唐捐
   actions:
     - theme: brand
       text: 开始逛逛

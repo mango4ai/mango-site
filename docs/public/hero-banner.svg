@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" role="img" aria-label="猫大刚主页 · 日拱一卒，功不唐捐">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="0.38" stop-color="#2563eb"/>
+      <stop offset="0.72" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.15" cy="-0.1" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="420" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="24" fill="url(#glow)"/>
+
+  <!-- 装饰圆点 -->
+  <circle cx="1120" cy="330" r="120" fill="#ffffff" opacity="0.08"/>
+  <circle cx="1180" cy="90" r="60" fill="#ffffff" opacity="0.10"/>
+  <circle cx="120" cy="60" r="40" fill="#ffffff" opacity="0.10"/>
+
+  <text x="640" y="172" text-anchor="middle" fill="#ffffff"
+        font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif"
+        font-size="76" font-weight="800" letter-spacing="6"
+        style="paint-order:stroke">猫大刚主页</text>
+
+  <text x="640" y="244" text-anchor="middle" fill="#ffffff"
+        font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif"
+        font-size="40" font-weight="600" letter-spacing="4"
+        opacity="0.96">日拱一卒，功不唐捐</text>
+
+  <text x="640" y="312" text-anchor="middle" fill="#ffffff"
+        font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif"
+        font-size="22" font-weight="400" letter-spacing="1"
+        opacity="0.85">写代码、读闲书、折腾硬件 —— 把学到的东西都留在这里</text>
+</svg>

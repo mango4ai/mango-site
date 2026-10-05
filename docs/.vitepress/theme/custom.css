@@ -58,6 +58,38 @@
   color: var(--vp-c-text-2);
 }
 
+/* ===== 首页标题图 banner ===== */
+/* 标题已放在 banner 图里，隐藏默认文字标题，仅保留按钮 */
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline {
+  display: none;
+}
+
+.VPHero .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.VPHero .image {
+  order: -1;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.VPHero .image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px -18px rgba(59, 130, 246, 0.75);
+}
+
+.VPHero .actions {
+  margin-top: 24px;
+}
+
 /* ===== 书签导航页 ===== */
 .bm {
   max-width: 1280px;
