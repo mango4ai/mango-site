@@ -69,16 +69,16 @@
 .VPHero .container {
   flex-direction: column;
   align-items: center;
-  max-width: 1600px;
+  max-width: 1200px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-/* 覆盖 VitePress 默认把 hero 图锁死在 320~392px 的容器/绝对定位，让 banner 真正放大 */
+/* 覆盖 VitePress 默认把 hero 图锁死在 320~392px 的容器/绝对定位，让 banner 真正可放大 */
 .VPHero .image {
   order: -1 !important;
   width: 100% !important;
-  max-width: 1600px !important;
+  max-width: 1200px !important;
   margin: 0 auto !important;
 }
 
