@@ -19,9 +19,11 @@ function sectionItems(section: string) {
           .trim()
           .replace(/^['"]|['"]$/g, '')
         const slug = f.replace(/\.md$/, '')
-        return { text: title || slug, link: `/${section}/${slug}` }
+        // 有 order 就按 order 排（用于有先后次序的教程），没有则按标题排
+        const order = Number(raw.match(/^order:\s*(\d+)$/m)?.[1] ?? Number.MAX_SAFE_INTEGER)
+        return { text: title || slug, link: `/${section}/${slug}`, order }
       })
-      .sort((a, b) => a.text.localeCompare(b.text, 'zh-CN'))
+      .sort((a, b) => a.order - b.order || a.text.localeCompare(b.text, 'zh-CN'))
   } catch {
     return []
   }
